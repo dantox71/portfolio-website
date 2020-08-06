@@ -1,0 +1,48 @@
+.form {
+    color: $color-primary;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    @include respond(tab-port) {
+        align-items: center;
+    }
+    &__input,
+    &__textarea {
+        transition: border .3s;
+        width: 100%;
+        box-shadow: $default-box-shadow;
+        padding: 2.5rem 1.5rem;
+        border: none;
+        border-bottom: 2px solid $color-tertiary;
+        font-size: 2rem;
+        &:active,
+        &:focus {
+            outline: none;
+        }
+        &::-webkit-input-placeholder {
+            color: #555;
+            font-size: 1.6rem;
+        }
+        &:focus {
+            border-bottom: 2px solid $color-primary;
+        }
+    }
+    &__input {
+        display: block;
+        color: black;
+    }
+    &__textarea {
+        resize: none;
+    }
+    &__group {
+        width: 100%;
+        &:not(:last-child) {
+            margin-bottom: 3rem;
+        }
+        &:last-child {
+            display: flex;
+            width: auto;
+        }
+    }
+}

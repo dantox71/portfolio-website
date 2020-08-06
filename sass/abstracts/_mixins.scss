@@ -1,0 +1,99 @@
+@mixin centerHorizontalVertical {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+@mixin gridCenterXY {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flexCenterXY {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flexCenterX {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+@mixin flexCenterY {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+@mixin flexColumnCenterXY {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flexColumnCenterX {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/*
+
+     $breakpoint options:
+    - phone (0 - 37.5em , 0 - 600px)
+    - tab-port(0 - 56.25em , 600px - 900px)
+    - tab-land( 0 - 75em , 900px - 1200px)
+
+    Between 75em and 112.5em (1200px and 1800px) are applied normal styles
+
+    - desktop-big(above 112.5em , above 1800px)
+
+
+    1em = 16px
+
+
+    Example how to use it:
+    
+    body{
+        @include respond(phone){
+            color:red;
+        }
+    }
+
+    Code shown above will change body selector color to be red when screen is smaller than 600px(37.5em)
+   
+
+*/
+
+@mixin respond($breakpoint) {
+    @if $breakpoint==phone {
+        @media(max-width: 37.5em) {
+            @content;
+        }
+    }
+    ;
+    @if $breakpoint==tab-port {
+        @media(max-width: 56.25em) {
+            @content;
+        }
+    }
+    ;
+    @if $breakpoint==tab-land {
+        @media(max-width: 75em) {
+            @content;
+        }
+    }
+    ;
+    @if $breakpoint==desktop-big {
+        @media(min-width: 112.5em) {
+            @content;
+        }
+    }
+    ;
+}

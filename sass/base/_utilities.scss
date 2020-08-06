@@ -1,0 +1,64 @@
+.u-container {
+    max-width: $container-max-width;
+    margin: 0 auto;
+    width: 90%;
+    padding: 0 1rem;
+}
+
+.u-text-center {
+    text-align: center;
+}
+
+.u-width-90 {
+    width: 90%;
+}
+
+.u-margin-bottom-small {
+    margin-bottom: 2rem;
+}
+
+.u-margin-bottom-medium {
+    margin-bottom: 5rem;
+}
+
+.u-margin-auto {
+    margin: auto;
+}
+
+.u-display-block {
+    display: block;
+}
+
+.u-display-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.u-text-bold {
+    font-weight: bold;
+}
+
+.u-margin-top-5 {
+    margin-top: 5rem;
+}
+
+// Flex utilities
+.u-display-flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// Flex utilities
+.u-display-flex-center-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+//Text colors
+.u-text-tertiary {
+    color: $color-tertiary;
+}

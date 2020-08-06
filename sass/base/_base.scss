@@ -1,0 +1,23 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: $color-grey-light-3;
+    @include respond(tab-port) {
+        background-color: $color-grey-light-2;
+    }
+}
+
+ul {
+    list-style: none;
+}

@@ -1,0 +1,22 @@
+$color-primary:#0B3C5D;
+$color-primary-light:lighten($color-primary, 5);
+$color-primary-dark:darken($color-primary, 5);
+//Grey colors
+$color-grey-light:#aaa;
+$color-grey-light-2:#eee;
+$color-grey-light-3:#ddd;
+$color-secondary:#1D2731;
+//Color tertiary
+$color-tertiary:#D9B310;
+$color-tertiary-light:lighten($color-tertiary, 5);
+$color-tertiary-dark:darken($color-tertiary, 5);
+$color-black:#111;
+$color-white:#fff;
+// Container max width
+$container-max-width:110rem;
+//Grid Gap
+$default-grid-gap:6rem;
+//Box shadow
+$default-box-shadow:1rem 1rem 2rem rgba($color-black, .2);
+$default-box-shadow-horizontal:1rem 0 2rem rgba($color-black, .2);
+$default-box-shadow-vertical:0 1rem 2rem rgba($color-black, .2);

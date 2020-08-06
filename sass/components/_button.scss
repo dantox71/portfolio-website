@@ -1,0 +1,107 @@
+.btn {
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    transition: .2s all;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.1rem 5rem;
+    color: $color-white;
+    border: .4rem solid $color-white;
+    width: 25rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+    justify-self: center;
+    justify-self: center;
+    align-self: center;
+    letter-spacing: .1rem;
+    box-shadow: $default-box-shadow;
+    cursor: pointer;
+    &--text {
+        display: block;
+    }
+    div {
+        transition: 0.2s all;
+    }
+    &:hover {
+        div {
+            transform: rotate(90deg);
+        }
+    }
+    &--primary {
+        color: $color-tertiary;
+        border: .4rem solid $color-tertiary;
+        &:hover {
+            color: $color-primary;
+            border: .4rem solid $color-primary;
+        }
+    }
+    &--secondary {
+        color: $color-secondary;
+        border: .4rem solid $color-secondary;
+        &:hover {
+            color: $color-tertiary;
+            border-color: $color-tertiary;
+        }
+    }
+    &--tertiary {
+        color: $color-tertiary;
+        border: .4rem solid $color-tertiary;
+        &:hover {
+            color: white;
+            border-color: white;
+        }
+    }
+    &--quaternary {
+        color: $color-tertiary;
+        border: .4rem solid $color-tertiary;
+        &:hover {
+            color: $color-primary;
+            border-color: $color-primary;
+        }
+    }
+    &--white {
+        color: $color-white;
+        border: .4rem solid $color-white;
+        &:hover {
+            color: $color-secondary;
+            border-color: $color-secondary;
+        }
+    }
+    &--animated {
+        animation: moveInBottom 1.4s ease-in-out;
+    }
+}
+
+.btn-text {
+    cursor: pointer;
+    transition: .5s all;
+    font-size: 1.6rem;
+    color: $color-white;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 1px solid $color-white;
+    padding: 3px;
+    transition: all .2s;
+    position: relative;
+    &:after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 0;
+        height: 1px;
+        background-color: $color-tertiary;
+        transition: .5s all;
+    }
+    &:hover::after {
+        width: 100%;
+    }
+    &:hover {
+        color: $color-tertiary;
+    }
+    &:active {
+        box-shadow: 0 .5rem 1rem rgba($color-black, .15);
+    }
+}

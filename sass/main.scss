@@ -1,0 +1,31 @@
+/* Abstracts (functions,mixins,variables) */
+
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+/*Base(base,animations,typography,utilities) */
+
+@import "base/base";
+@import "base/animations";
+@import "base/typography";
+@import "base/utilities";
+
+/*Components(hamburget-btn,button)*/
+
+@import "components/button";
+@import "components/scrollbar";
+@import "components/form";
+@import "components/hamburger-btn";
+
+/* Layout(header,navbar)*/
+
+@import "layout/navigation";
+@import "layout/header";
+@import "layout/projects";
+@import "layout/footer";
+@import "layout/skills";
+
+/*Pages( home )*/
+
+@import "pages/home";
